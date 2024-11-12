@@ -1,0 +1,66 @@
+package carro;
+
+public class Carro {
+  //Abaixo segue os atributos
+  private String cor;
+  private String modelo;
+  private int ano;
+  private double litrosTanque;
+//final dos atributos
+
+  // Método construtor
+  public Carro(String cor, String modelo, int ano, double litrosTanque) {
+      this.cor = cor;
+      this.modelo = modelo;
+      this.ano = ano;
+      this.litrosTanque = litrosTanque;
+      //final construtor
+  }
+
+  //getters e setters inicio
+  public String getCor() {
+      return cor;
+  }
+  public void setCor(String cor) {
+      this.cor = cor;
+  }
+
+  public int getAno() {
+      return ano;
+  }
+  public void setAno(int ano) {
+      this.ano = ano;
+  }
+
+  public String getModelo() {
+      return modelo;
+  }
+  public void setModelo(String modelo) {
+      this.modelo = modelo;    }
+
+  public double getLitrosTanque() {
+      return litrosTanque;
+  }
+  public void setLitrosTanque(double litrosTanque) {
+      this.litrosTanque = litrosTanque;
+  }
+  // getters e setters final
+
+  //Metodos abaixo
+  public void ligar() {
+      // Lógica para ligar o carro
+  }
+
+  public void acelerar() {
+      // Lógica para acelerar o carro
+  }
+
+  public void frear() {
+      // Lógica para frear o carro
+  }
+
+  public void encherTanque(double litrosColocar) {
+      this.litrosTanque += litrosColocar;
+  }
+  // final dos metodos
+}
